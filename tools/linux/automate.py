@@ -174,7 +174,8 @@ print("---------------------------------------------")
 
 build_tools_params = ["--branch", branch, 
                       "--module", modules, 
-                      "--update", "1",
+                      #"--update", "1",更新1 不更新0
+                      "--update", "0",
                       "--qt-dir", os.getcwd() + "/qt_build/Qt-5.9.9"]
 
 base.cmd_in_dir("../..", "./configure.py", build_tools_params)
